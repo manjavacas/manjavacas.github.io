@@ -5,10 +5,6 @@ import reflex as rx
 from rxconfig import config
 
 
-class State(rx.State):
-    """The app state."""
-
-    ...
 
 
 def index() -> rx.Component:
@@ -35,5 +31,5 @@ def index() -> rx.Component:
     )
 
 
-app = rx.App()
+app = rx.App(overlay_component=None)
 app.add_page(index)
